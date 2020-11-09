@@ -1,0 +1,3 @@
+[submodule "dmd-vision"]
+	path = dmd-vision
+	url = git@github.com:SurfingNerd/dmd-vision.git
