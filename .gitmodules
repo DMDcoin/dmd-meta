@@ -7,3 +7,6 @@
 [submodule "openethereum"]
 	path = openethereum
 	url = git@github.com:DMDcoin/openethereum.git
+[submodule "honey-badger-testing"]
+	path = honey-badger-testing
+	url = git@github.com:SurfingNerd/honey-badger-testing.git
