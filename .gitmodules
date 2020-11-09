@@ -1,3 +1,9 @@
 [submodule "dmd-vision"]
 	path = dmd-vision
 	url = git@github.com:SurfingNerd/dmd-vision.git
+[submodule "hbbft-posdao-contracts"]
+	path = hbbft-posdao-contracts
+	url = https://github.com/SurfingNerd/hbbft-posdao-contracts
+[submodule "openethereum"]
+	path = openethereum
+	url = git@github.com:DMDcoin/openethereum.git
