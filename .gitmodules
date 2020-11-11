@@ -10,3 +10,6 @@
 [submodule "honey-badger-testing"]
 	path = honey-badger-testing
 	url = git@github.com:SurfingNerd/honey-badger-testing.git
+[submodule "dmdv4migration"]
+	path = dmdv4migration
+	url = git@github.com:SurfingNerd/dmdv4migration.git
