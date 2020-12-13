@@ -1,15 +1,15 @@
 [submodule "dmd-vision"]
 	path = dmd-vision
-	url = git@github.com:SurfingNerd/dmd-vision.git
+	url = git@github.com:dmdcoin/dmd-vision.git
 [submodule "hbbft-posdao-contracts"]
 	path = hbbft-posdao-contracts
-	url = https://github.com/SurfingNerd/hbbft-posdao-contracts
+	url = git@github.com:dmdcoin/hbbft-posdao-contracts.git
 [submodule "openethereum"]
 	path = openethereum
 	url = git@github.com:DMDcoin/openethereum.git
 [submodule "honey-badger-testing"]
 	path = honey-badger-testing
-	url = git@github.com:SurfingNerd/honey-badger-testing.git
+	url = git@github.com:dmdcoin/honey-badger-testing.git
 [submodule "dmdv4migration"]
 	path = dmdv4migration
-	url = git@github.com:SurfingNerd/dmdv4migration.git
+	url = git@github.com:dmdcoin/dmdv4migration.git
