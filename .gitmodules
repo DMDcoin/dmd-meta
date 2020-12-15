@@ -13,3 +13,6 @@
 [submodule "dmdv4migration"]
 	path = dmdv4migration
 	url = git@github.com:dmdcoin/dmdv4migration.git
+[submodule "posdao-ui"]
+	path = posdao-ui
+	url = git@github.com:DMDcoin/posdao-ui.git
