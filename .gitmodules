@@ -1,15 +1,12 @@
-[submodule "dmd-vision"]
-	path = dmd-vision
-	url = git@github.com:SurfingNerd/dmd-vision.git
-[submodule "hbbft-posdao-contracts"]
-	path = hbbft-posdao-contracts
-	url = https://github.com/SurfingNerd/hbbft-posdao-contracts
-[submodule "openethereum"]
-	path = openethereum
-	url = git@github.com:DMDcoin/openethereum.git
 [submodule "honey-badger-testing"]
 	path = honey-badger-testing
 	url = git@github.com:SurfingNerd/honey-badger-testing.git
-[submodule "dmdv4migration"]
-	path = dmdv4migration
-	url = git@github.com:SurfingNerd/dmdv4migration.git
+[submodule "diamond-contracts-core"]
+	path = diamond-contracts-core
+	url = git@github.com:DMDcoin/diamond-contracts-core.git
+[submodule "diamond-node"]
+	path = diamond-node
+	url = git@github.com:DMDcoin/diamond-node.git
+[submodule "diamond-contracts-dao"]
+	path = diamond-contracts-dao
+	url = git@github.com:DMDcoin/diamond-contracts-dao.git
