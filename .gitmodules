@@ -10,3 +10,6 @@
 [submodule "diamond-contracts-dao"]
 	path = diamond-contracts-dao
 	url = git@github.com:DMDcoin/diamond-contracts-dao.git
+[submodule "diamond-contracts-claiming"]
+	path = diamond-contracts-claiming
+	url = git@github.com:DMDcoin/diamond-contracts-claiming.git
