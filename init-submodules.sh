@@ -1,7 +1,9 @@
 #!/bin/bash
 
 echo "getting defined submodules"
-git submodule update -r
+# git submodule update -r
+git submodule init -r
+
 
 echo "warning: NPM Version requirements are not checked in this script"
 echo "local instal of node dependencies"
