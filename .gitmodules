@@ -1,15 +1,15 @@
 [submodule "honey-badger-testing"]
 	path = honey-badger-testing
-	url = git@github.com:SurfingNerd/honey-badger-testing.git
+	url = https://github.com/DMDcoin/honey-badger-testing.git
 [submodule "diamond-contracts-core"]
 	path = diamond-contracts-core
-	url = git@github.com:DMDcoin/diamond-contracts-core.git
+	url = https://github.com/DMDcoin/diamond-contracts-core.git
 [submodule "diamond-node"]
 	path = diamond-node
-	url = git@github.com:DMDcoin/diamond-node.git
+	url = https://github.com/DMDcoin/diamond-node.git
 [submodule "diamond-contracts-dao"]
 	path = diamond-contracts-dao
-	url = git@github.com:DMDcoin/diamond-contracts-dao.git
+	url = https://github.com/DMDcoin/diamond-contracts-dao.git
 [submodule "diamond-contracts-claiming"]
 	path = diamond-contracts-claiming
-	url = git@github.com:DMDcoin/diamond-contracts-claiming.git
+	url = https://github.com/DMDcoin/diamond-contracts-claiming.git
