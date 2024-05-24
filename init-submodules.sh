@@ -10,4 +10,6 @@ cd diamond-contracts-core && npm i && cd ..
 cd diamond-contracts-dao && npm i && cd ..
 cd diamond-contracts-claiming && npm i && cd ..
 # note: honey-badger-testing has postinstall scripts that use the other projects.
-cd honey-badger-testing && npm i && cd ..
+cd honey-badger-testing && npm i && npm run localnet-create-mnemonic && cd ..
+
+cd diamond-node && export RUSTFLAGS='-C target-cpu=native' && cargo build --release
