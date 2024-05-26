@@ -10,7 +10,7 @@ echo $starttime >> out/latest/starttime.txt
 
 git submodule -q foreach 'git remote get-url origin --push && git rev-parse HEAD' > out/latest/versions.txt 
 
-cd honey-badger-testing && npm run testnet-testrun-auto-restake >> out/latest/main.log || true
+cd honey-badger-testing && npm run testnet-testrun-auto-restake >> ../out/latest/main.log || true
 
 # cleanup
 pkill diamond-node
