@@ -27,7 +27,8 @@ echo "starting test, read /out/latest/main.log for more information..."
 cd honey-badger-testing && npm run testnet-testrun-auto-restake >> ../out/latest/main.log || true
 cd ..
 mkdir -p out/latest/node_logs/
-mv honey-badger-testing/testnet/nodes-local-test-auto-restake/node*/diamond-node.log out/latest/node_logs/
+rsync --recursive  --include="*/diamond-node.log" --filter="-! */"   --prune-empty-dirs  honey-badger-testing/testnet  out/latest/node_logs/
+
 # cleanup
 pkill diamond-node
 echo "cleanup end"
