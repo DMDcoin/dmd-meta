@@ -13,7 +13,7 @@ echo "starttime: "$starttime
 git submodule -q foreach 'git remote get-url origin --push && git rev-parse HEAD' > out/latest/versions.txt 
 
 echo "version:"
-cat out/latest/vversions.txt 
+cat out/latest/versions.txt 
 echo "starting test, read /out/latest/main.log for more information..."
 cd honey-badger-testing && npm run testnet-testrun-auto-restake >> ../out/latest/main.log || true
 cd ..
