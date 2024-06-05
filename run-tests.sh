@@ -3,8 +3,8 @@
 # cleanup from old tests
 
 if [ -d "out/latest" ]; then
-    lateststarttime= $(cat out/latest/starttime.txt)
-    echo "backup of latest test results from " $lateststarttime
+    lateststarttime=$(cat out/latest/starttime.txt)
+    echo "backup of latest test results from $lateststarttime" 
     mv out/latest out/$lateststarttime
 fi
 
@@ -24,7 +24,7 @@ git submodule -q foreach 'git remote get-url origin --push && git rev-parse HEAD
 echo "version:"
 cat out/latest/versions.txt 
 echo "starting test, read /out/latest/main.log for more information..."
-cd honey-badger-testing && npm run testnet-testrun-auto-restake >> ../out/latest/main.log || true
+cd honey-badger-testing && npm run testnet-testrun-auto-restake 2>&1 | tee ../out/latest/main.log || true
 cd ..
 mkdir -p out/latest/node_logs/
 rsync --recursive  --include="*/diamond-node.log" --filter="-! */"   --prune-empty-dirs  honey-badger-testing/testnet  out/latest/node_logs/
