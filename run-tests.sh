@@ -5,7 +5,8 @@
 if [ -d "out/latest" ]; then
     lateststarttime=$(cat out/latest/starttime.txt)
     echo "backup of latest test results from $lateststarttime" 
-    mv out/latest out/$lateststarttime
+    mkdir -p out/oldtestresults
+    mv out/latest out/oldtestresults/$lateststarttime
 fi
 
 echo "Executes End2End test on a initialized setup."
