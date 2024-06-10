@@ -5,7 +5,7 @@
 if [ -d "out/latest" ]; then
     lateststarttime=$(cat out/latest/starttime.txt)
     echo "backup of latest test results from $lateststarttime" 
-    mkdir -p out/oldtestresults
+    mkdir -p out/old
     mv out/latest out/old/$lateststarttime
 fi
 
