@@ -1,18 +1,15 @@
-[submodule "dmd-vision"]
-	path = dmd-vision
-	url = git@github.com:dmdcoin/dmd-vision.git
-[submodule "hbbft-posdao-contracts"]
-	path = hbbft-posdao-contracts
-	url = git@github.com:dmdcoin/hbbft-posdao-contracts.git
-[submodule "openethereum"]
-	path = openethereum
-	url = git@github.com:DMDcoin/openethereum.git
 [submodule "honey-badger-testing"]
 	path = honey-badger-testing
-	url = git@github.com:dmdcoin/honey-badger-testing.git
-[submodule "dmdv4migration"]
-	path = dmdv4migration
-	url = git@github.com:dmdcoin/dmdv4migration.git
-[submodule "posdao-ui"]
-	path = posdao-ui
-	url = git@github.com:DMDcoin/posdao-ui.git
+	url = https://github.com/DMDcoin/honey-badger-testing.git
+[submodule "diamond-contracts-core"]
+	path = diamond-contracts-core
+	url = https://github.com/DMDcoin/diamond-contracts-core.git
+[submodule "diamond-node"]
+	path = diamond-node
+	url = https://github.com/DMDcoin/diamond-node.git
+[submodule "diamond-contracts-dao"]
+	path = diamond-contracts-dao
+	url = https://github.com/DMDcoin/diamond-contracts-dao.git
+[submodule "diamond-contracts-claiming"]
+	path = diamond-contracts-claiming
+	url = https://github.com/DMDcoin/diamond-contracts-claiming.git
