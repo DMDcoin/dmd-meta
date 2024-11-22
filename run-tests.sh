@@ -25,7 +25,11 @@ git submodule -q foreach 'git remote get-url origin --push && git rev-parse HEAD
 echo "version:"
 cat out/latest/versions.txt 
 echo "starting test, read /out/latest/main.log for more information..."
-cd honey-badger-testing && npm run testnet-testrun-auto-restake 2>&1 | tee ../out/latest/main.log || true
+# todo: decide on building...
+# &&  
+cd honey-badger-testing 
+npm run build-open-ethereum-release
+npm run testnet-testrun-auto-restake 2>&1 | tee ../out/latest/main.log || true
 cd ..
 mkdir -p out/latest/node_logs/
 rsync --recursive  --include="*/diamond-node.log" --filter="-! */"   --prune-empty-dirs  honey-badger-testing/testnet  out/latest/node_logs/
