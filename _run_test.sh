@@ -2,6 +2,9 @@
 
 # cleanup from old tests
 
+
+TESTNAME=early-epoch-end
+echo $TESTNAME
 if [ -d "out/latest" ]; then
     lateststarttime=$(cat out/latest/starttime.txt)
     echo "backup of latest test results from $lateststarttime" 
@@ -29,10 +32,10 @@ echo "starting test, read /out/latest/main.log for more information..."
 # &&  
 cd honey-badger-testing 
 npm run build-open-ethereum-release
-npm run testnet-testrun-auto-restake 2>&1 | tee ../out/latest/main.log || true
+npm run testnet-testrun-$TESTNAME 2>&1 | tee ../out/latest/main.log || true
 cd ..
 mkdir -p out/latest/node_logs/
-rsync --recursive  --include="*/diamond-node.log" --filter="-! */"   --prune-empty-dirs  honey-badger-testing/testnet  out/latest/node_logs/
+rsync --recursive  --include="*/diamond-node.log" --filter="-! */"   --prune-empty-dirs  honey-badger-testing/testnet/nodes-local-test-$TESTNAME  out/latest/node_logs/
 
 # cleanup
 pkill diamond-node

@@ -1,9 +1,12 @@
-[submodule "honey-badger-testing"]
-	path = honey-badger-testing
-	url = https://github.com/DMDcoin/honey-badger-testing.git
+[submodule "diamond-dev-tools"]
+	path = diamond-dev-tools
+	url = https://github.com/DMDcoin/diamond-dev-tools.git
 [submodule "diamond-contracts-core"]
 	path = diamond-contracts-core
 	url = https://github.com/DMDcoin/diamond-contracts-core.git
+[submodule "diamond-contracts-views"]
+	path = diamond-contracts-views
+	url = https://github.com/DMDcoin/diamond-contracts-views.git
 [submodule "diamond-node"]
 	path = diamond-node
 	url = https://github.com/DMDcoin/diamond-node.git
