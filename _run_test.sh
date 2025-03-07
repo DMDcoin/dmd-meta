@@ -30,12 +30,12 @@ cat out/latest/versions.txt
 echo "starting test, read /out/latest/main.log for more information..."
 # todo: decide on building...
 # &&  
-cd honey-badger-testing 
+cd diamond-dev-tools
 npm run build-open-ethereum-release
 npm run testnet-testrun-$TESTNAME 2>&1 | tee ../out/latest/main.log || true
 cd ..
 mkdir -p out/latest/node_logs/
-rsync --recursive  --include="*/diamond-node.log" --filter="-! */"   --prune-empty-dirs  honey-badger-testing/testnet/nodes-local-test-$TESTNAME  out/latest/node_logs/
+rsync --recursive  --include="*/diamond-node.log" --filter="-! */"   --prune-empty-dirs  diamond-dev-tools/testnet/nodes-local-test-$TESTNAME  out/latest/node_logs/
 
 # cleanup
 pkill diamond-node
