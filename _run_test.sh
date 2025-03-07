@@ -3,7 +3,7 @@
 # cleanup from old tests
 
 
-TESTNAME=early-epoch-end
+#TESTNAME=early-epoch-end
 echo $TESTNAME
 if [ -d "out/latest" ]; then
     lateststarttime=$(cat out/latest/starttime.txt)
