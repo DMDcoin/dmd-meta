@@ -9,7 +9,8 @@ echo "local instal of node dependencies"
 cd diamond-contracts-core && npm i && cd ..
 cd diamond-contracts-dao && npm i && cd ..
 cd diamond-contracts-claiming && npm i && cd ..
-# note: honey-badger-testing has postinstall scripts that use the other projects.
-cd diamond-dev-tools && npm i && npm run localnet-create-mnemonic && cd ../..
+cd diamond-contracts-views && npm i && cd ..
+
+cd diamond-dev-tools && npm i && npm run localnet-create-mnemonic && cd ..
 
 cd diamond-node && export RUSTFLAGS='-C target-cpu=native' && cargo build --release
