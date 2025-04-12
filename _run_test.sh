@@ -4,7 +4,15 @@
 
 
 #TESTNAME=early-epoch-end
+
+
+if [ -z "$TESTNAME" ]; then
+    echo "TESTNAME not set, exiting"
+    exit 1
+fi
+
 echo $TESTNAME
+
 if [ -d "out/latest" ]; then
     lateststarttime=$(cat out/latest/starttime.txt)
     echo "backup of latest test results from $lateststarttime" 
