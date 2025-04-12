@@ -14,3 +14,6 @@
 [submodule "diamond-contracts-claiming"]
 	path = diamond-contracts-claiming
 	url = https://github.com/DMDcoin/diamond-contracts-claiming.git
+[submodule "diamond-dev-tools"]
+	path = diamond-dev-tools
+	url = https://github.com/DMDcoin/diamond-dev-tools.git
