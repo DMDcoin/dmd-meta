@@ -39,7 +39,7 @@ echo "starting test, read /out/latest/main.log for more information..."
 # todo: decide on building...
 # &&  
 cd diamond-dev-tools
-npm run build-open-ethereum-release
+npm run build-open-ethereum
 npm run testnet-testrun-$TESTNAME 2>&1 | tee ../out/latest/main.log || true
 cd ..
 mkdir -p out/latest/node_logs/
