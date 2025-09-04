@@ -37,6 +37,7 @@ npm run testnet-testrun-TESTNAME 2>&1 | tee ../out/latest/main.log || true
 TESTRUN_EXIT_CODE=$?
 cd ..
 mkdir -p out/latest/node_logs/
+echo "copy result logs"
 rsync --recursive  --include="*/diamond-node.log" --filter="-! */"   --prune-empty-dirs  diamond-dev-tools/testnet/nodes-local-test-$TESTNAME  out/latest/node_logs/
 
 # cleanup
