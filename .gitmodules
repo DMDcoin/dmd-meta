@@ -17,3 +17,6 @@
 [submodule "diamond-dev-tools"]
 	path = diamond-dev-tools
 	url = https://github.com/DMDcoin/diamond-dev-tools.git
+[submodule "diamond-ui"]
+	path = diamond-ui
+	url = https://github.com/DMDcoin/diamond-ui.git
