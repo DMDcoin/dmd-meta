@@ -20,3 +20,6 @@
 [submodule "diamond-ui"]
 	path = diamond-ui
 	url = https://github.com/DMDcoin/diamond-ui.git
+[submodule "diamond-dapp-claiming"]
+	path = diamond-dapp-claiming
+	url = https://github.com/DMDcoin/diamond-dapp-claiming.git
